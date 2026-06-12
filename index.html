@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Synapse UI</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+<div id="topbar">
+    <div class="logo">🧠 Synapse UI</div>
+
+    <div class="controls">
+        <button onclick="addNode('goal')">Goal</button>
+        <button onclick="addNode('llm')">LLM</button>
+        <button onclick="executeGraph()">Run</button>
+    </div>
+</div>
+
+<div id="workspace">
+    <div id="canvas">
+        <svg id="edges"></svg>
+    </div>
+</div>
+
+<script src="js/graph.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/executor.js"></script>
+
+</body>
+</html>
